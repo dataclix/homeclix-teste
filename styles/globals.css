@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.anticon.ant-input-password-icon {
+  color: white !important;
+}
+
+.custom-password-icon .anticon.ant-input-password-icon {
+  color: black !important;
+}
+
+.custom-input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+.custom-password-input input::placeholder {
+  color: #fff !important; /* Cor do placeholder */
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #124B51 !important;
+  border-color: #124B51 !important;
+}
+
+.ant-input-outlined[disabled] {
+  color: rgba(0, 0, 0, 0.6);
+}
+.ant-modal-content {
+  padding: 0 !important;
+  border-radius: 14px !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;  /* Largura do scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #124B51;  /* Cor do thumb (alça) */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #fff;  /* Cor do track (trilha) */
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;  /* Firefox */
+  scrollbar-color: #124B51 #c1cdcf;  /* Firefox */
+}
+.sticky-header th,
+.sticky-column td:first-child {
+    position: sticky;
+    z-index: 30;
+    background-color: #fff;
+}
+
+.sticky-header th {
+    top: 0;
+}
+
+.sticky-column td:first-child {
+    left: 0;
+    z-index: 1;
+    /* Garante que a coluna fixa esteja acima do restante do conteúdo da tabela */
+}
+.ant-switch-checked {
+  background-color: #4caf50 !important /* Verde */
+}
+
+/* Estilos para o Switch quando desligado */
+.ant-switch:not(.ant-switch-checked) {
+  background-color: #f44336 !important; /* Vermelho */
+}
+.ant-input-number-disabled{
+  color: rgba(0, 0, 0, 0.7) !important;
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+
+
+
